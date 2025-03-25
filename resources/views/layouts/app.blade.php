@@ -12,24 +12,24 @@
             font-family: 'Pretendard GOV';
             font-weight: 400;
             font-style: normal;
-            src: url('/fonts/PretendardGOV-Regular.subset.woff2') format('woff2'),
-                 url('/fonts/PretendardGOV-Regular.subset.woff') format('woff');
+            src: url('{{ asset('fonts/PretendardGOV-Regular.subset.woff2') }}') format('woff2'),
+                 url('{{ asset('fonts/PretendardGOV-Regular.subset.woff') }}') format('woff');
         }
         
         @font-face {
             font-family: 'Pretendard GOV';
             font-weight: 500;
             font-style: normal;
-            src: url('/fonts/PretendardGOV-Medium.subset.woff2') format('woff2'),
-                 url('/fonts/PretendardGOV-Medium.subset.woff') format('woff');
+            src: url('{{ asset('fonts/PretendardGOV-Medium.subset.woff2') }}') format('woff2'),
+                 url('{{ asset('fonts/PretendardGOV-Medium.subset.woff') }}') format('woff');
         }
         
         @font-face {
             font-family: 'Pretendard GOV';
             font-weight: 700;
             font-style: normal;
-            src: url('/fonts/PretendardGOV-Bold.subset.woff2') format('woff2'),
-                 url('/fonts/PretendardGOV-Bold.subset.woff') format('woff');
+            src: url('{{ asset('fonts/PretendardGOV-Bold.subset.woff2') }}') format('woff2'),
+                 url('{{ asset('fonts/PretendardGOV-Bold.subset.woff') }}') format('woff');
         }
         
         :root {
@@ -52,12 +52,12 @@
     </style>
     
     <!-- KRDS 스타일 -->
-    <link rel="stylesheet" href="{{ asset('/css/krds/token/krds_tokens.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/krds/common/common.css') }}">
-    <link rel="stylesheet" href="{{ asset('/css/krds/component/component.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/krds/token/krds_tokens.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/krds/common/common.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/krds/component/component.css') }}">
     
     <!-- 애플리케이션 커스텀 스타일 -->
-    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     @yield('styles')
 </head>
 <body>
@@ -153,7 +153,7 @@
     </div>
 
     <!-- 기본 스크립트 -->
-    <script src="{{ asset('/js/krds/component/ui-script.js') }}"></script>
+    <script src="{{ asset('js/krds/component/ui-script.js') }}"></script>
     
     <!-- 추가 스크립트 -->
     @yield('scripts')
